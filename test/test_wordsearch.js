@@ -35,4 +35,20 @@ describe("#wordSearch()", function() {
 
     assert.isTrue(result);
   });
+
+  it("should return true if the word is present, veritcal test", function() {
+    const result = wordSearch([
+      ['A', 'W', 'C', 'F', 'Q', 'U', 'A', 'L'],
+      ['S', 'E', 'I', 'V', 'F', 'E', 'L', 'D'],
+      ['Y', 'F', 'C', 'I', 'Q', 'U', 'A', 'L'],
+      ['H', 'M', 'J', 'A', 'E', 'V', 'R', 'G'],
+      ['W', 'H', 'C', 'B', 'Y', 'E', 'R', 'L'],
+      ['B', 'F', 'R', 'L', 'N', 'E', 'Y', 'B'],
+      ['U', 'B', 'T', 'E', 'A', 'P', 'A', 'I'],
+      ['O', 'D', 'C', 'A', 'K', 'U', 'A', 'S'],
+      ['E', 'Z', 'K', 'F', 'Q', 'U', 'A', 'L'],
+    ], 'VIABLE')
+
+    assert.isTrue(result);
+  });
 });
